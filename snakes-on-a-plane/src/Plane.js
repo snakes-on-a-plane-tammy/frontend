@@ -1,4 +1,5 @@
 import React from 'react'
+import './Plane.css' 
 
 class Plane extends React.Component {
     constructor(props) {
@@ -13,6 +14,38 @@ class Plane extends React.Component {
                 },
                 {
                     cell_type: 'aisle',
+                },
+                {
+                    cell_type: 'aisle',
+                },
+                {
+                    cell_type: 'aisle',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'wall',
+                },
+            ],
+            [
+                {
+                    cell_type: 'wall',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
                 },
                 {
                     cell_type: 'aisle',
@@ -37,8 +70,12 @@ class Plane extends React.Component {
         const rowsToRender = []
 
         for (let row of this.state.rows) {
+                        
+            let cellsToRender = row.map(cell => {
+                let className = 'Cell ' + cell.cell_type;
 
-            let cellsToRender = row.map(cell => <div>{cell.cell_type}</div>)
+            return <div className={className}>{cell.cell_type}</div>
+        })
             rowsToRender.push(cellsToRender);
         }
 
@@ -46,7 +83,9 @@ class Plane extends React.Component {
     }
 
     render() {
-        return this.renderRows()
+        return (<div className="Plane">
+                {this.renderRows()}
+            </div>)
     }
 }
 
