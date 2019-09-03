@@ -1,12 +1,13 @@
 import React from 'react';
+import Plane from './Plane.js';
+
 import logo from './logo.svg';
 import './App.css';
-import Plane from './Plane.js'
 
 function App() {
   return (
     <div>
-      <h1>Plane soon!</h1>
+      <Plane />
     </div>
   );
 }
