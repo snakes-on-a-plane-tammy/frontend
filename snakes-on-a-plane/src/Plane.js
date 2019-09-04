@@ -5,6 +5,10 @@ class Plane extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            player: {
+                x_pos: 6,
+                y_pos: 2,
+            },
             rows: [[
                 {
                     cell_type: 'entrance',
@@ -52,6 +56,8 @@ class Plane extends React.Component {
                 },
                 {
                     cell_type: 'seat',
+                    x_pos: 6,
+                    y_pos: 2,
                 },
                 {
                     cell_type: 'seat',
@@ -62,7 +68,124 @@ class Plane extends React.Component {
                 {
                     cell_type: 'wall',
                 },
-            ]]
+            ],
+            [
+                {
+                    cell_type: 'wall',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'aisle',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'wall',
+                },
+            ],
+            [
+                {
+                    cell_type: 'wall',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'aisle',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'wall',
+                },
+            ],
+            [
+                {
+                    cell_type: 'wall',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'aisle',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'wall',
+                },
+            ],
+            [
+                {
+                    cell_type: 'wall',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'aisle',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'wall',
+                },
+            ],
+        ]
         }
     }
 
@@ -74,6 +197,10 @@ class Plane extends React.Component {
             let cellsToRender = row.map(cell => {
                 let className = 'Cell ' + cell.cell_type;
 
+                if (cell.x_pos === this.state.player.x_pos && 
+                    cell.y_pos === this.state.player.y_pos) {
+                        className += ' player'
+                }
             return <div className={className}>{cell.cell_type}</div>
         })
             rowsToRender.push(cellsToRender);

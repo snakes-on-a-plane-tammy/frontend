@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .Plane {
     text-align: center;
     display: grid;
@@ -10,5 +14,22 @@
 }
 
 .seat {
-    background-color: aqua;
+    background-color: rgba(255, 127, 80, 0.735);
+}
+
+.entrance {
+    background-color: rgb(116, 195, 221);
+}
+
+.aisle {
+    background-color: rgba(80, 255, 229, 0.378);
+} 
+
+.wall {
+    background-color: purple;
+}
+
+.player {
+    /* border: 3px solid yellow; */
+    background-color: yellow;
 }
