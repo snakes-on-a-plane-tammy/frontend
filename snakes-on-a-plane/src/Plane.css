@@ -1,4 +1,5 @@
 * {
+    border: 4px solid grey;
     box-sizing: border-box;
 }
 
@@ -9,12 +10,12 @@
 }
 
 .Cell {
-    border: 1px solid grey;
+    border: 1px solid rgb(255, 255, 255);
     height: 50px;
 }
 
 .seat {
-    background-color: rgba(255, 127, 80, 0.735);
+    background-color: rgba(255, 98, 80, 0.577);
 }
 
 .entrance {
@@ -26,10 +27,20 @@
 } 
 
 .wall {
-    background-color: purple;
+    background-color: rgba(45, 0, 128, 0.769);
+    color: white;
+}
+
+.exit {
+    background-color: rgba(116, 195, 221);
+}
+
+.galley {
+    background-color: rgba(80, 255, 229, 0.378);
 }
 
 .player {
     /* border: 3px solid yellow; */
     background-color: yellow;
 }
+

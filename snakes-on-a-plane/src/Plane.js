@@ -158,6 +158,35 @@ class Plane extends React.Component {
             ],
             [
                 {
+                    cell_type: 'exit',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'aisle',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'exit',
+                },
+            ],
+            [
+                {
                     cell_type: 'wall',
                 },
                 {
@@ -180,6 +209,122 @@ class Plane extends React.Component {
                 },
                 {
                     cell_type: 'seat',
+                },
+                {
+                    cell_type: 'wall',
+                },
+            ],
+            [
+                {
+                    cell_type: 'wall',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'aisle',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'wall',
+                },
+            ],
+            [
+                {
+                    cell_type: 'wall',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'aisle',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'wall',
+                },
+            ],
+            [
+                {
+                    cell_type: 'wall',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'aisle',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'seat',
+                },
+                {
+                    cell_type: 'wall',
+                },
+            ],
+            [
+                {
+                    cell_type: 'exit',
+                },
+                {
+                    cell_type: 'aisle',
+                },
+                {
+                    cell_type: 'aisle',
+                },
+                {
+                    cell_type: 'aisle',
+                },
+                {
+                    cell_type: 'aisle',
+                },
+                {
+                    cell_type: 'galley',
+                },
+                {
+                    cell_type: 'galley',
+                },
+                {
+                    cell_type: 'galley',
                 },
                 {
                     cell_type: 'wall',
